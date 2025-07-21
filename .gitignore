@@ -1,0 +1,24 @@
+# Ignore Python cache files
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignore virtual environment
+venv/
+
+# Ignore environment and editor config files
+.env
+*.env
+*.swp
+*.swo
+*.bak
+
+# Ignore compiled or temporary files
+*.log
+*.tmp
+*.DS_Store
+Thumbs.db
+
+# Ignore any system metadata files
+ehthumbs.db
+Desktop.ini
