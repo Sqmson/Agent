@@ -1,3 +1,4 @@
+beautifulsoup4==4.13.4
 blinker==1.9.0
 certifi==2025.6.15
 charset-normalizer==3.4.2
@@ -7,6 +8,8 @@ faiss-cpu==1.11.0
 filelock==3.18.0
 Flask==3.1.1
 fsspec==2025.5.1
+greenlet==3.2.3
+gunicorn==23.0.0
 hf-xet==1.1.5
 huggingface-hub==0.33.2
 idna==3.10
@@ -34,6 +37,8 @@ nvidia-nvjitlink-cu12==12.6.85
 nvidia-nvtx-cu12==12.6.77
 packaging==25.0
 pillow==11.3.0
+playwright==1.53.0
+pyee==13.0.0
 python-dotenv==1.1.1
 PyYAML==6.0.2
 regex==2024.11.6
@@ -42,6 +47,7 @@ safetensors==0.5.3
 scikit-learn==1.7.0
 scipy==1.16.0
 sentence-transformers==5.0.0
+soupsieve==2.7
 sympy==1.14.0
 threadpoolctl==3.6.0
 tokenizers==0.21.2
