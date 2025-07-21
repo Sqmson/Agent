@@ -9,39 +9,32 @@ load_dotenv()
 API_KEY = os.getenv("API_KEY")
 app = Flask(__name__)
 
-with open("Document.txt") as f:
-    knowledge_base = f.read()
-
-def process(knowledge_base, question):
-    """Basic fallback response using whole document."""
-    return "Let me connect you with support — I'm still learning this topic."
-
-@app.route("/chat", methods=["POST"])
-def chat():
-    data = request.json
-    question = data["message"]
-    response = process(knowledge_base, question)
-    if response:
-        return jsonify({"answer": response})
-    else:
-        return jsonify({"answer": "I'm not sure about that."})
-
 @app.route("/")
 def index():
-    return render_template("base.html")
+    return render_template("base.html")  # Make sure base.html exists
+
+@app.route("/initial", methods=["GET"])
+def initial():
+    hour = datetime.now().hour
+    greeting = "Good morning" if hour < 12 else "Good afternoon" if hour < 17 else "Good evening"
+    return jsonify({
+        "reply": f"{greeting}! How can I help you today?"
+    })
 
 @app.route("/ask", methods=["POST"])
 def ask():
     user_message = request.json.get("message", "").strip()
 
     try:
+        # Retrieve context chunks using FAISS
         retrieved_chunks = get_top_k_docs(user_message)
         if not retrieved_chunks or all(len(c.strip()) < 40 for c in retrieved_chunks):
             return jsonify({"reply": "⚠️ I couldn't find enough relevant information in the document."})
 
         context = "\n".join(f"- {chunk}" for chunk in retrieved_chunks)
-        system_prompt = open("Prompt_Engineering.txt").read()
+        system_prompt = open("Prompt_Engineering.txt", encoding="utf-8").read()
 
+        # Compose RAG-enabled API prompt
         payload = {
             "model": "google/gemma-3n-e4b-it",
             "messages": [
@@ -69,15 +62,7 @@ def ask():
         traceback.print_exc()
         return jsonify({"reply": "⚠️ Sorry, an internal error occurred."}), 500
 
-@app.route("/initial", methods=["GET"])
-def initial():
-    hour = datetime.now().hour
-    greeting = "Good morning" if hour < 12 else "Good afternoon" if hour < 17 else "Good evening"
-    intro = f"{greeting}! How can i help?."
-    return jsonify({
-        "reply": intro
-    })
-
+# Port binding for Render.com
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5000))  # fallback for local dev
+    port = int(os.environ.get("PORT", 5000))
     app.run(host="0.0.0.0", port=port)
