@@ -64,5 +64,9 @@ def ask():
 
 # Port binding for Render.com
 if __name__ == "__main__":
+<<<<<<< HEAD
     port = int(os.environ.get("PORT", 5000))
+=======
+    port = int(os.environ.get("PORT", 5001))  # fallback for local dev
+>>>>>>> refs/remotes/origin/main
     app.run(host="0.0.0.0", port=port)
