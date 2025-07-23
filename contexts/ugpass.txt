@@ -1,0 +1,57 @@
+The traditional reliance on passwords and passcodes is now braced with security challenges as well as end user fatigue given the increasing trend of digital services. As a result, user identities cannot be proven beyond reasonable doubt. 
+Whereas it is estimated that the introduction of online services by GoU has simplified access to services and saved over four million working hours, users still have to physically go to GoU offices to sign documents in order to complete some of the more complex transactions. This has proved to be a huddle to the rollout and adoption of e-services, that otherwise would be in high demand. 
+There is a need to for a secure channel for identification of users as well as the use of advanced electronic signatures based on a chain of trust.
+
+What is UGPass?
+This is a digital authentication and electronic signatures solution that helps you
+sign or seal documents online in a fast, convenient and secure manner thereby
+creating digital trust
+
+What you can use the Solution for:
+Digitally Authenticate, Electronically Sign and Seal Documents.
+
+How it is built.
+The solution comes with a mobile application and the following features:
+ - Qualified Certificate Autority
+ - National - authentication Provider
+ - Electronic signature Provider
+
+A Reliable and Verified Subscriber
+Trusted Services leveraging the power of PKI
+Legally Compliant with Laws in the country
+Easy to Integrate with Service Providers' Systems
+
+Benefits
+The solution empowers everyday citizens by providing them with secure,
+convenient, and efficient ways to interact with digital services and conduct
+transactions in the modern, digital world.
+
+Convenience: Everyday citizens can sign documents, complete
+transactions, and authenticate themselves online without the
+need for physical presence.
+
+Time savings: eliminate the need to physically travel to sign
+documents or engage in face-to-face authentication
+
+Remote management: employers can easily authorize
+tasks while travelling or working remotely.
+
+Reduced paperwork: as need for printing of documents
+in minimized
+
+Non-repudiation: enables digital trust as users cannot
+deny signed or sealed transactions
+
+What do I Need to Onboard?
+- Valid Original National ID or E-Passport 
+- Email Address
+- Phone Number 
+- Smart Phone with Internet Access
+
+
+How To Get Started
+- Download UGPass to get started:
+    Google Playstore - https://nita.go.ug/ugpass-android
+    Apple App Store - https://nita.go.ug/ugpass-ios
+
+For more information, visit https://nita.go.ug/ugpass or email info@ugpass.go.ug

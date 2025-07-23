@@ -1,0 +1,14 @@
+    on to happen between both the sites
+
+Our Clients Responsibility
+
+    Provide appropriate information to NITA-U team regarding system
+    Configuration for all the servers at head office (In case of replication between both the sites)
+
+Data Security Measures
+
+     Database and application servers are password protected by the customer
+    Client provides NITA-U Data Centre with full details of their officials authorized to get access to the DR Site.
+    Client may decide to change the authorities from time to time, but fully at customer’s discretion. It is responsibility of the Client to keep NITA-U updated of any such change
+    The client maintains the schedule of checking their application on a regular basis as NITA-U will not be responsible for application functionality
+    NITA-U is responsible for providing necessary hardware and software for PaaS only and any other additional software’s are accommodated by the client

@@ -1,0 +1,10 @@
+NITA-U is integrating all MDA systems to the UGhub Systems Integration Platform so as to enable seamlessly sharing of data across Government systems in a rational, secure, efficient and sustainable manner. This is aimed at improving service delivery to citizens as well as reporting, planning and decision making across Government and private entities
+
+The platform has been built over the “WSO2” technology stack and it is entirely hosted with in the government of Uganda data centre. The platform is vendor neutral with capability to integrate any system regardless of the technology it runs on. The platform provides capabilities to consume services from other entities as well as availing services to be consumed by others. It gives full control to every entity in managing their respective services and controlling accessibility.
+
+The UgHuB platform project was completed successfully and is fully operational with over 120 Entites and many other entities in the on boarding stage. Among the features of the platform are;
+
+    API management
+    Identity Access Management
+    Semantic and Systems Catalogue
+    Reporting, Analytics and IOT (Internet of things)

@@ -1,0 +1,6 @@
+Unified Messaging and Collaboration System is a government of Uganda platform designed to revolutionize communication and collaboration across all government sectors. UMCS is fully operational Software as a Service (SaaS) with over 140 fully onboarded and utilizing the service.
+With a comprehensive suite of features tailored to enhance productivity and streamline workflows:
+•    Email: Stay connected with seamless email communication.
+•    Audio & Video Conferencing: Facilitate virtual meetings and discussions effortlessly.
+•    Content Sharing & Collaboration: Foster teamwork and idea sharing through collaborative tools.
+•    Drive: Securely store and access important documents and files.
