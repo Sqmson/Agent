@@ -65,7 +65,7 @@ async def crawl():
 asyncio.run(crawl())
 
 # Save to .txt (best for RAG/document parsing)
-with open("nita_crawled_output.txt", "w", encoding="utf-8") as f:
+with open("context.txt", "w", encoding="utf-8") as f:
     f.write(scraped)
 
 print("✅ Finished: Content saved to nita_crawled_output.txt")

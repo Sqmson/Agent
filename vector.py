@@ -3,10 +3,10 @@ import numpy as np
 from sentence_transformers import SentenceTransformer
 import re, os
 
-# Load model once
+# load model at least once
 model = SentenceTransformer("all-MiniLM-L6-v2")
 
-# Preload all service documents and build searchable structure
+# preload all service documents and build searchable structure
 service_contexts = {}
 service_embeddings = {}
 faiss_indices = {}
@@ -31,7 +31,7 @@ for fname in os.listdir(context_dir):
             service_embeddings[service_name] = embeddings
             faiss_indices[service_name] = index
 
-# Get top-k relevant chunks from a specific document
+# get top-k relevant chunks from a specific document
 
 def get_top_k_docs(query, raw_text, k=3):
     docs = re.split(r'\n\s*\n|(?=^### )', raw_text.strip(), flags=re.MULTILINE)
@@ -43,7 +43,7 @@ def get_top_k_docs(query, raw_text, k=3):
     _, indices = index.search(query_vec, k)
     return [docs[i] for i in indices[0] if i < len(docs)]
 
-# Determine the most likely service category
+# determining the most likely service category
 
 def classify_service_from_query(query):
     query_vec = model.encode([query])
@@ -52,5 +52,5 @@ def classify_service_from_query(query):
         D, _ = index.search(query_vec, 1)
         scores[service_name] = D[0][0]
 
-    # Return service with the lowest distance (highest relevance)
+    # return service with the lowest distance (highest relevance)
     return min(scores, key=scores.get)

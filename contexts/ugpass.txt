@@ -48,10 +48,8 @@ What do I Need to Onboard?
 - Phone Number 
 - Smart Phone with Internet Access
 
-
 How To Get Started
 - Download UGPass to get started:
     Google Playstore - https://nita.go.ug/ugpass-android
     Apple App Store - https://nita.go.ug/ugpass-ios
-
-For more information, visit https://nita.go.ug/ugpass or email info@ugpass.go.ug
+    more info - https://nita.go.ug/ugpass
